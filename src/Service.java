@@ -1,57 +1,55 @@
 public class Service implements Sales {
-    private Integer IDSales;
-    private Integer Code;
-    private String NameSales;
-    private Double PriceSales;
-    private Double Price;
+    private String idSales;
+    private String nameServ;
+    private String nameSales;
+    private Double price;
+    private IVAType ivaType;
 
     @Override
-    public Integer getIDSales() {
-        return IDSales;
+    public String getIdSales() {
+        return idSales;
     }
 
     @Override
-    public void setIDSales(Integer IDSales) {
-        this.IDSales = IDSales;
+    public void setIdSales(String idSales) {
+        this.idSales = idSales;
     }
 
-    @Override
-    public Integer getCode() {
-        return Code;
+    public String getNameServ() {
+        return nameServ;
     }
 
-    @Override
-    public void setCode(Integer code) {
-        this.Code = code;
+    public void setNameServ(String nameServ) {
+        this.nameServ = nameServ;
     }
 
     @Override
     public String getNameSales() {
-        return NameSales;
+        return this.nameServ;
     }
 
     @Override
     public void setNameSales(String nameSales) {
-        this.NameSales = nameSales;
-    }
-
-    @Override
-    public Double getPriceSales() {
-        return PriceSales;
-    }
-
-    @Override
-    public void setPriceSales(Double priceSales) {
-        this.PriceSales = priceSales;
+        this.nameSales = nameSales;
     }
 
     @Override
     public Double getPrice() {
-        return Price;
+        return price;
     }
 
     @Override
     public void setPrice(Double price) {
-        this.Price = price;
+        this.price = price;
+    }
+
+
+    @Override
+    public IVAType getIvaType() {
+        return ivaType;
+    }
+
+    public void setIvaType(IVAType ivaType) {
+        this.ivaType = ivaType;
     }
 }

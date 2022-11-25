@@ -1,74 +1,73 @@
 public class Product implements Sales{
-    private Integer IDSales;
-    private Integer Code;
-    private String NameSales;
-    private String BrandProd;
-    private String ModelProd;
-    private Double PriceSales;
+    private String idSales;
+    private String nameProd;
+    private String nameSales;
+    private String brandProd;
+    private String modelProd;
+    private Double price;
+    private IVAType ivaType;
 
     @Override
-    public Integer getIDSales() {
-        return IDSales;
+    public String getIdSales() {
+        return idSales;
     }
 
     @Override
-    public void setIDSales(Integer IDSales) {
-        this.IDSales = IDSales;
+    public void setIdSales(String idSales) {
+        this.idSales = idSales;
     }
 
-    @Override
-    public Integer getCode() {
-        return Code;
+    public String getNameProd() {
+        return nameProd;
     }
 
-    @Override
-    public void setCode(Integer code) {
-        this.Code = code;
+    public void setNameProd(String nameProd) {
+        this.nameProd = nameProd;
     }
 
     @Override
     public String getNameSales() {
-        return NameSales;
+        return this.nameProd;
     }
 
     @Override
     public void setNameSales(String nameSales) {
-        this.NameSales = nameSales;
+        this.nameSales = nameSales;
     }
 
     public String getBrandProd() {
-        return BrandProd;
+        return brandProd;
     }
 
     public void setBrandProd(String brandProd) {
-        this.BrandProd = brandProd;
+        this.brandProd = brandProd;
     }
 
     public String getModelProd() {
-        return ModelProd;
+        return modelProd;
     }
 
     public void setModelProd(String modelProd) {
-        this.ModelProd = modelProd;
-    }
-
-    @Override
-    public Double getPriceSales() {
-        return PriceSales;
-    }
-
-    @Override
-    public void setPriceSales(Double priceSales) {
-        this.PriceSales = priceSales;
+        this.modelProd = modelProd;
     }
 
     @Override
     public Double getPrice() {
-        return null;
+        return price;
     }
 
     @Override
-    public void setPrice(Double Price) {
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 
+
+    @Override
+    public IVAType getIvaType() {
+        return ivaType;
+    }
+
+    public void setIvaType(IVAType ivaType) {
+        this.ivaType = ivaType;
     }
 }

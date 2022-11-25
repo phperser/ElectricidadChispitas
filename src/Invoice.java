@@ -1,60 +1,82 @@
-import java.util.Date;
-
 public class Invoice {
-    private Integer IDInv;
-    private Date Date;
-    private Double TaxBase;
-    private Double Total;
-    private products;
-    private services;
-    private Autonomous Autonomous;
-    private Society Society;
+    private Integer idInv;
+    private String date;
+    private Double taxBase;
+    private Double total;
+    private Product product;
+    private Service service;
+    private Autonomous autonomous;
+    private Society society;
 
-    public Integer getIDInv() {
-        return IDInv;
+    public Integer getIdInv() {
+        return idInv;
     }
 
-    public void setIDInv(Integer IDInv) {
-        this.IDInv = IDInv;
+    public void setIdInv(Integer idInv) {
+        this.idInv = idInv;
     }
 
-    public java.util.Date getDate() {
-        return Date;
+    public String getDate() {
+        return date;
     }
 
-    public void setDate(java.util.Date date) {
-        this.Date = date;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public Double getTaxBase() {
-        return TaxBase;
+        return taxBase;
     }
 
     public void setTaxBase(Double taxBase) {
-        this.TaxBase = taxBase;
+        this.taxBase = taxBase;
     }
 
     public Double getTotal() {
-        return Total;
+        return total;
     }
 
     public void setTotal(Double total) {
-        this.Total = total;
+        this.total = total;
+    }
+
+    public Product getProduct(Product product1) {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public Service getService(Service service1) {
+        return service;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public Service getService() {
+        return service;
     }
 
     public Autonomous getAutonomous() {
-        return Autonomous;
+        return autonomous;
     }
 
     public void setAutonomous(Autonomous autonomous) {
-        this.Autonomous = autonomous;
+        this.autonomous = autonomous;
     }
 
     public Society getSociety() {
-        return Society;
+        return society;
     }
 
     public void setSociety(Society society) {
-        this.Society = society;
+        this.society = society;
     }
 }

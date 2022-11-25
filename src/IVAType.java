@@ -1,12 +1,12 @@
 public class IVAType {
 
-    private Integer Type;
+    private Double Type;
 
-    public Integer getType() {
+    public Double getType() {
         return Type;
     }
 
-    public void setType(Integer type) {
+    public void setType(Double type) {
         this.Type = type;
     }
 }

@@ -1,99 +1,95 @@
 public class Autonomous implements Customer {
-    private Integer IDCustomer;
-    private String IN;
-    private String NameCust;
-    private String SurnameCust;
-    private Integer ZipCode;
-    private String City;
-    private String Province;
-    private String Email;
-    private Integer PhoneNumber;
+    private String codeCustomer;
+    private String dni;
+    private String nameCust;
+    private String surnameAutonomous;
+    private String address;
+    private String city;
+    private String province;
+    private String email;
+    private Integer phoneNumber ;
 
     @Override
-    public Integer getIDCustomer() {
-        return IDCustomer;
+    public String getCodeCustomer() {
+        return this.dni;
     }
 
     @Override
-    public void setIDCustomer(Integer IDCustomer) {
-        this.IDCustomer = IDCustomer;
+    public void setCodeCustomer(String codeCustomer) {
+        this.codeCustomer = codeCustomer;
     }
 
-    @Override
-    public String getIN() {
-        return IN;
+    public String getDni() {
+        return dni;
     }
 
-    @Override
-    public void setIN(String IN) {
-        this.IN = IN;
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
-    @Override
     public String getNameCust() {
-        return NameCust;
+        return nameCust;
     }
 
-    @Override
     public void setNameCust(String nameCust) {
-        this.NameCust = nameCust;
+        this.nameCust = nameCust;
     }
 
-    public String getSurnameCust() {
-        return SurnameCust;
+    public String getSurnameAutonomous() {
+        return surnameAutonomous;
     }
 
-    public void setSurnameCust(String surnameCust) {
-        this.SurnameCust = surnameCust;
-    }
-
-    @Override
-    public Integer getZipCode() {
-        return ZipCode;
+    public void setSurnameAutonomous(String surnameAutonomous) {
+        this.surnameAutonomous = surnameAutonomous;
     }
 
     @Override
-    public void setZipCode(Integer zipCode) {
-        this.ZipCode = zipCode;
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
     public String getCity() {
-        return City;
+        return city;
     }
 
     @Override
     public void setCity(String city) {
-        this.City = city;
+        this.city = city;
     }
 
     @Override
     public String getProvince() {
-        return Province;
+        return province;
     }
 
     @Override
     public void setProvince(String province) {
-        this.Province = province;
+        this.province = province;
     }
 
     @Override
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     @Override
     public void setEmail(String email) {
-        this.Email = email;
+        this.email = email;
     }
 
     @Override
     public Integer getPhoneNumber() {
-        return PhoneNumber;
+        return phoneNumber;
     }
 
     @Override
     public void setPhoneNumber(Integer phoneNumber) {
-        this.PhoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
 }

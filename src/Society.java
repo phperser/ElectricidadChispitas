@@ -1,90 +1,88 @@
 public class Society implements Customer {
-    private Integer IDCustomer;
-    private String IN;
-    private String NameCust;
-    private Integer ZipCode;
-    private String City;
-    private String Province;
-    private String Email;
-    private Integer PhoneNumber;
+    private String codeCustomer;
+    private String nif;
+    private String nameCust;
+    private String address;
+    private String city;
+    private String province;
+    private String email;
+    private Integer phoneNumber;
 
     @Override
-    public Integer getIDCustomer() {
-        return IDCustomer;
+    public String getCodeCustomer() {
+        return this.nif;
     }
 
     @Override
-    public void setIDCustomer(Integer IDCustomer) {
-        this.IDCustomer = IDCustomer;
+    public void setCodeCustomer(String codeCustomer) {
+        this.codeCustomer = codeCustomer;
     }
 
-    @Override
-    public String getIN() {
-        return IN;
+    public String getNif() {
+        return nif;
     }
 
-    @Override
-    public void setIN(String IN) {
-        this.IN = IN;
+    public void setNif(String nif) {
+        this.nif = nif;
     }
 
     @Override
     public String getNameCust() {
-        return NameCust;
+        return nameCust;
     }
 
     @Override
     public void setNameCust(String nameCust) {
-        this.NameCust = nameCust;
+        this.nameCust = nameCust;
     }
 
     @Override
-    public Integer getZipCode() {
-        return ZipCode;
+    public String getAddress() {
+        return address;
     }
 
     @Override
-    public void setZipCode(Integer zipCode) {
-        this.ZipCode = zipCode;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
     public String getCity() {
-        return City;
+        return city;
     }
 
     @Override
     public void setCity(String city) {
-        this.City = city;
+        this.city = city;
     }
 
     @Override
     public String getProvince() {
-        return Province;
+        return province;
     }
 
     @Override
     public void setProvince(String province) {
-        this.Province = province;
+        this.province = province;
     }
 
     @Override
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     @Override
     public void setEmail(String email) {
-        this.Email = email;
+        this.email = email;
     }
 
     @Override
     public Integer getPhoneNumber() {
-        return PhoneNumber;
+        return phoneNumber;
     }
 
     @Override
     public void setPhoneNumber(Integer phoneNumber) {
-        this.PhoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
 }
