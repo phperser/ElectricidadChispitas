@@ -1,18 +1,13 @@
 public interface Sales {
 
-    public Integer getIDSales();
-    public void setIDSales(Integer IDSales);
-
-    public Integer getCode();
-    public void setCode(Integer Code);
+    public String getIdSales();
+    public void setIdSales(String idSales);
 
     public String getNameSales();
-    public void setNameSales(String NameSales);
-
-    public Double getPriceSales();
-    public void setPriceSales(Double PriceSales);
+    public void setNameSales(String nameSales);
 
     public Double getPrice();
-    public void setPrice(Double Price);
+    public void setPrice(Double price);
 
+    public IVAType getIvaType();
 }

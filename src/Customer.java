@@ -1,27 +1,25 @@
 public interface Customer {
-    public Integer getIDCustomer();
-    public void  setIDCustomer(Integer IDCustomer);
 
-    public String getIN();
-    public void setIN(String IN);
+    public String getCodeCustomer();
+    public void setCodeCustomer(String codeCustomer);
 
     public String getNameCust();
-    public void setNameCust(String NameCust);
+    public void setNameCust(String nameCust);
 
-    public Integer getZipCode();
-    public void setZipCode(Integer ZipCode);
+    public String getAddress();
+    public void setAddress(String address);
 
     public String getCity();
-    public void setCity(String City);
+    public void setCity(String city);
 
     public String getProvince();
-    public void setProvince(String Province);
+    public void setProvince(String province);
 
     public String getEmail();
-    public void setEmail(String Email);
+    public void setEmail(String email);
 
     public Integer getPhoneNumber();
-    public void setPhoneNumber(Integer PhoneNumber);
+    public void setPhoneNumber(Integer phoneNumber);
 
 
 }
