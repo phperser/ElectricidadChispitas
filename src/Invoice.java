@@ -40,15 +40,15 @@ public class Invoice {
         this.total = total;
     }
 
-    public Product getProduct(Product product1) {
-        return product;
+    public Product getProduct() {
+        return this.product;
     }
 
     public void setProduct(Product product) {
         this.product = product;
     }
 
-    public Service getService(Service service1) {
+    public Service getService() {
         return service;
     }
 
@@ -56,13 +56,6 @@ public class Invoice {
         this.service = service;
     }
 
-    public Product getProduct() {
-        return product;
-    }
-
-    public Service getService() {
-        return service;
-    }
 
     public Autonomous getAutonomous() {
         return autonomous;
