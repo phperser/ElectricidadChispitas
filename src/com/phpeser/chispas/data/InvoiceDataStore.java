@@ -8,8 +8,6 @@ public interface InvoiceDataStore {
 
     void saveInvoice(Invoice invoice);
 
-    void  deleteInvoice(Invoice invoice);
-
     void updateInvoice(Invoice invoice);
 
     List<Invoice> getAllInvoice();

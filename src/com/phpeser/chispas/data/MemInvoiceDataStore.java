@@ -15,10 +15,6 @@ public class MemInvoiceDataStore implements InvoiceDataStore{
         dataStore.put(String.valueOf(invoice.getIdInv()), invoice);
     }
 
-    @Override
-    public void deleteInvoice(Invoice invoice) {
-        dataStore.remove(invoice);
-    }
 
     @Override
     public void updateInvoice(Invoice invoice) {
